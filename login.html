@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Newton's NIE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="login.css"> <!-- New CSS for login page -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-overlay" id="loader-overlay">
+        <div class="loader"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fas fa-user-graduate login-icon"></i>
+                <h2>Student Login</h2>
+                <p>Access your Newton's NIE profile</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="student-id">Student ID</label>
+                    <input type="text" id="student-id" name="studentId" placeholder="NIE12345" required>
+                    <div class="error-message" id="student-id-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="login-btn">
+                    <a href="index.html"></a>
+                    Login</button>
+            </form>
+            <div class="login-footer">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <p>Don't have an account? <a href="#">Register Now</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="main2.js"></script>
+    <script src="main.js"></script>
+    <script src="login.js"></script> <!-- New JS for login page functionality -->
+</body>
+</html>
